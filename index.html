@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero">
+        <div id="calendar"></div>
+        <div id="event-form-container">
+            <h2 id="add-event-head">Add Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" class="text-area" id="event-name" name="event-name">
+                <label for="event-date">Event Date:</label>
+                <input type="date" class="text-area" id="event-date" name="event-date">
+                <label for="event-time">Event Time:</label>
+                <input type="time" class="text-area" id="event-time" name="event-time">
+                <button type="submit" id="add-event-button">Add Event</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="evo-calendar.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Event container for deletion -->
+    <div id="event-container">
+        <h2 id="added-events">Added Events:</h2>
+    </div>
+</body>
+
+</html>
